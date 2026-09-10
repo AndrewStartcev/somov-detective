@@ -1,37 +1,113 @@
 # ASSETS REPORT — Batch 01
 
-Статус: в работе. Прочитаны 14 обязательных документов; просмотрены все 5 PNG из docs/assets/.
+Статус: финальная проверка. Прочитаны все 14 обязательных документов; просмотрены все 5 изображений в docs/assets/.
+Дополнительный просмотренный референс: `docs/assets/89589881-52a5-46c2-9931-a77628e3279e.png` (Сомов/улица).
 
-Сохранённые файлы (размеры и alpha проверены локально):
-
-| Путь | Назначение | Размер | Прозрачность | Статус | Референс |
-|---|---|---|---|---|---|
-| `assets/production/batch_01/characters/somov/somov_give_item.png` | somov_give_item | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_idle.png` | somov_idle | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_inspect_glass.png` | somov_inspect_glass | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_inspect_low.png` | somov_inspect_low | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_open_door.png` | somov_open_door | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_pickup.png` | somov_pickup | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_read_document.png` | somov_read_document | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_surprised.png` | somov_surprised | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_suspicious.png` | somov_suspicious | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_talk.png` | somov_talk | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_think.png` | somov_think | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_walk_back_sheet.png` | somov_walk_back_sheet | 2304×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_walk_front_sheet.png` | somov_walk_front_sheet | 2304×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_walk_side_sheet.png` | somov_walk_side_sheet | 2304×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/characters/somov/somov_write_notebook.png` | somov_write_notebook | 384×400 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/concepts/klavdiya_character_sheet.png` | klavdiya_character_sheet | 1536×1024 | нет | needs review | docs/assets/ab64cd9e-f440-480b-ad8a-03b32f8c6b59.png |
-| `assets/production/batch_01/concepts/somov_character_sheet.png` | somov_character_sheet | 3344×1882 | нет | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/concepts/somov_states_source.png` | somov_states_source | 1448×1086 | нет | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/concepts/somov_walk_source.png` | somov_walk_source | 1536×1024 | да | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
-| `assets/production/batch_01/previews/somov_preview.png` | somov_preview | 1536×1200 | нет | needs review | docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png |
+Референсы:
+- S: `docs/assets/f2f6f7f0-c0f4-4225-b472-887b69ae73f6.png`.
+- K: `docs/assets/ab64cd9e-f440-480b-ad8a-03b32f8c6b59.png`.
+- G: `docs/assets/020e23f9-4224-4260-a294-2e6194587052.png`.
+- M: `docs/assets/map_tikhorechensk_v2.png`.
 
 ## Готово
-Все сохранённые файлы перечислены выше. 12 состояний Сомова и 3 листа ходьбы: кадр 384×400, опора (192,376), слева направо, предварительно 8 fps.
+Сохранено 82 PNG. Полный список ниже; ready означает статическую графическую готовность, без интеграции в Godot.
+
+| Путь | Назначение | Размер | Alpha | Статус | Референс |
+|---|---|---|---|---|---|
+| `assets/production/batch_01/characters/gorynych/gorynych_heads_argue_sheet.png` | анимация | 1728×512 | да | needs review | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_idle.png` | поза персонажа | 576×512 | да | ready | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_point.png` | поза персонажа | 576×512 | да | ready | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_remember.png` | поза персонажа | 576×512 | да | ready | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_sleep_head_sheet.png` | анимация | 2304×512 | да | needs review | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_surprised.png` | поза персонажа | 576×512 | да | ready | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_talk_sheet.png` | анимация | 2304×512 | да | needs review | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_tool.png` | поза персонажа | 576×512 | да | ready | G |
+| `assets/production/batch_01/characters/gorynych/gorynych_work.png` | поза персонажа | 576×512 | да | ready | G |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_displeased.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_folder.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_idle.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_over_glasses.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_phone.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_seated.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_sense_room.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_smile.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_talk.png` | поза персонажа | 448×464 | да | ready | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_type_sheet.png` | анимация | 2688×464 | да | needs review | K |
+| `assets/production/batch_01/characters/klavdiya/klavdiya_walk_side_sheet.png` | анимация | 2688×464 | да | needs review | K |
+| `assets/production/batch_01/characters/somov/somov_give_item.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_idle.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_inspect_glass.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_inspect_low.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_open_door.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_pickup.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_read_document.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_surprised.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_suspicious.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_talk.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_think.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/characters/somov/somov_walk_back_sheet.png` | анимация | 2304×400 | да | needs review | S |
+| `assets/production/batch_01/characters/somov/somov_walk_front_sheet.png` | анимация | 2304×400 | да | needs review | S |
+| `assets/production/batch_01/characters/somov/somov_walk_side_sheet.png` | анимация | 2304×400 | да | needs review | S |
+| `assets/production/batch_01/characters/somov/somov_write_notebook.png` | поза персонажа | 384×400 | да | ready | S |
+| `assets/production/batch_01/concepts/gorynych_animation_source.png` | исходный пакет, не импортировать в игру | 1536×1024 | нет | needs review | G |
+| `assets/production/batch_01/concepts/gorynych_character_sheet.png` | master / согласование | 1536×1024 | нет | needs review | G |
+| `assets/production/batch_01/concepts/gorynych_states_source.png` | исходный пакет, не импортировать в игру | 1536×1024 | нет | needs review | G |
+| `assets/production/batch_01/concepts/klavdiya_animation_source.png` | исходный пакет, не импортировать в игру | 1536×1024 | нет | needs review | K |
+| `assets/production/batch_01/concepts/klavdiya_character_sheet.png` | master / согласование | 1536×1024 | нет | needs review | K |
+| `assets/production/batch_01/concepts/klavdiya_states_source.png` | исходный пакет, не импортировать в игру | 1254×1254 | нет | needs review | K |
+| `assets/production/batch_01/concepts/props_source.png` | исходный пакет, не импортировать в игру | 1024×1536 | нет | needs review | G + K |
+| `assets/production/batch_01/concepts/somov_character_sheet.png` | master / согласование | 3344×1882 | нет | needs review | S |
+| `assets/production/batch_01/concepts/somov_states_source.png` | исходный пакет, не импортировать в игру | 1448×1086 | нет | needs review | S |
+| `assets/production/batch_01/concepts/somov_walk_source.png` | исходный пакет, не импортировать в игру | 1536×1024 | да | needs review | S |
+| `assets/production/batch_01/concepts/ui_source.png` | исходный пакет, не импортировать в игру | 1024×1536 | нет | needs review | G + K |
+| `assets/production/batch_01/previews/gorynych_preview.png` | контрольная композиция | 1728×1024 | нет | needs review | G |
+| `assets/production/batch_01/previews/klavdiya_preview.png` | контрольная композиция | 1344×1392 | нет | needs review | K |
+| `assets/production/batch_01/previews/props_preview.png` | контрольная композиция | 1200×1920 | нет | needs review | G + K |
+| `assets/production/batch_01/previews/somov_preview.png` | контрольная композиция | 1536×1200 | нет | needs review | S |
+| `assets/production/batch_01/previews/ui_vertical_slice_preview.png` | контрольная композиция | 1600×900 | нет | needs review | G + K |
+| `assets/production/batch_01/props/prop_anchor_thursday.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_boiler_valve_new.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_boiler_valve_old.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_case_folder.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_commission_photo.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_day_book.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_gorynych_boot.png` | предмет | 400×384 | да | ready | G |
+| `assets/production/batch_01/props/prop_magnifying_glass.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_newspaper.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_shift_journal.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_somov_notebook.png` | предмет | 400×384 | да | ready | S |
+| `assets/production/batch_01/props/prop_storage_receipt.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/props/prop_visitor_journal.png` | предмет | 400×384 | да | ready | G + K |
+| `assets/production/batch_01/ui/button_base_disabled.png` | UI | 320×112 | да | ready | G + K |
+| `assets/production/batch_01/ui/button_base_hover.png` | UI | 320×112 | да | ready | G + K |
+| `assets/production/batch_01/ui/button_base_normal.png` | UI | 320×112 | да | ready | G + K |
+| `assets/production/batch_01/ui/button_base_pressed.png` | UI | 320×112 | да | ready | G + K |
+| `assets/production/batch_01/ui/cursor_default.png` | UI | 64×64 | да | ready | G + K |
+| `assets/production/batch_01/ui/cursor_exit.png` | UI | 64×64 | да | ready | G + K |
+| `assets/production/batch_01/ui/cursor_inspect.png` | UI | 64×64 | да | ready | G + K |
+| `assets/production/batch_01/ui/cursor_talk.png` | UI | 64×64 | да | ready | G + K |
+| `assets/production/batch_01/ui/cursor_use.png` | UI | 64×64 | да | ready | G + K |
+| `assets/production/batch_01/ui/icon_inventory.png` | UI | 96×96 | да | ready | G + K |
+| `assets/production/batch_01/ui/icon_map.png` | UI | 96×96 | да | ready | G + K + M (палитра; география не перенесена) |
+| `assets/production/batch_01/ui/icon_notebook.png` | UI | 96×96 | да | ready | G + K |
+| `assets/production/batch_01/ui/icon_pause.png` | UI | 96×96 | да | ready | G + K |
+| `assets/production/batch_01/ui/panel_dialogue.png` | UI | 1200×136 | да | ready | G + K |
+| `assets/production/batch_01/ui/panel_inventory.png` | UI | 640×192 | да | ready | G + K |
+| `assets/production/batch_01/ui/panel_map.png` | UI | 720×560 | да | ready | G + K + M (палитра; география не перенесена) |
+| `assets/production/batch_01/ui/panel_notebook.png` | UI | 720×560 | да | ready | G + K |
+| `assets/production/batch_01/ui/panel_thought.png` | UI | 960×72 | да | ready | G + K |
 
 ## Требует проверки
-Ходьба: чередование ног и плавность; художественное согласование master-листов. Master Сомова увеличен с 1672×941 до 3344×1882 локально; это не нативная детализация 3K.
+- Все character sheets — художественное согласование. Сомов: экспорт 3344×1882 увеличен локально с 1672×941; нативной детализации 3K нет.
+- Ходьба Сомова и Клавдии: генератор повторяет части шага; нужны проверка чередования ног и ручная анимационная доводка. Контрольная генерация боковой ходьбы Сомова проблему не устранила и не включена в production.
+- Печать Клавдии: лёгкие различия стола/поз между кадрами; проверить неподвижность мебели.
+- Мимические циклы Горыныча: проверить плавность/стабильность тела. Кадр с четвёртой головой исключён из production; спор содержит 3 корректных кадра.
+- Согласовать единый экранный масштаб персонажей и читаемость UI на мобильном устройстве.
+
+Параметры листов: Сомов 384×400, опора (192,376), 6 кадров; Клавдия 448×464, опора (224,440), 6 кадров; Горыныч 576×512, опора (288,488), спор 3 кадра, речь/сон по 4. Порядок слева направо. Стартовая настройка: ходьба/печать 8 fps, речь/спор 6 fps, сон 2 fps; значения требуют игрового просмотра.
+Панели dialogue/thought и кнопки локально собраны по 9-slice. Карта — пустая бумажная основа; динамические подписи/география не впечены.
 
 ## Не сделано
-Оставшаяся часть Batch 01 ещё в работе; Batch 02 не начат.
+Полностью выверенные анимационные циклы не достигнуты: ограничения перечислены выше. Игровая интеграция и Batch 02 не выполнялись по ТЗ.
+
+Проверка файлов: RGBA, прозрачный внешний отступ и размеры всех текущих игровых PNG проверены; ошибок нет.
