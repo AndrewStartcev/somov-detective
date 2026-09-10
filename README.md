@@ -38,20 +38,22 @@
 ### Мир и стиль
 
 - [`docs/WORLD.md`](docs/WORLD.md) — канон мира.
-- [`docs/MAP.md`](docs/MAP.md) — география Тихореченска.
+- [`docs/MAP.md`](docs/MAP.md) — география Тихореченска и scope первой игры.
 - [`docs/VISUAL_BIBLE.md`](docs/VISUAL_BIBLE.md) — визуальный язык.
 - [`docs/assets/map_tikhorechensk_v2.png`](docs/assets/map_tikhorechensk_v2.png) — утверждённая карта v2.
 
-### Первая игра
+### Сюжет и игровой контент
 
 - [`docs/STORY.md`](docs/STORY.md) — утверждённая сюжетная повесть.
 - [`docs/CHARACTERS.md`](docs/CHARACTERS.md) — канонический состав персонажей.
 - [`docs/LOCATIONS.md`](docs/LOCATIONS.md) — 8 игровых узлов / 14 core backgrounds.
 - [`docs/SCENES.md`](docs/SCENES.md) — 5 актов, 21 смысловая сцена + эпилог.
 - [`docs/DETECTIVE_GRAPH.md`](docs/DETECTIVE_GRAPH.md) — улики, факты, версии и progression gates.
-- [`docs/PUZZLES.md`](docs/PUZZLES.md) — основные головоломки и предметные цепочки.
-- [`docs/SIDE_TASKS.md`](docs/SIDE_TASKS.md) — необязательные мини-задачи и ambient content.
-- [`docs/DIALOGUE_BIBLE.md`](docs/DIALOGUE_BIBLE.md) — голоса персонажей и диалоговый скелет.
+- [`docs/PUZZLES.md`](docs/PUZZLES.md) — 14 core puzzles/interactions.
+- [`docs/SIDE_TASKS.md`](docs/SIDE_TASKS.md) — optional mini-tasks и ambient content.
+- [`docs/DIALOGUE_BIBLE.md`](docs/DIALOGUE_BIBLE.md) — голоса персонажей и правила текста.
+- [`docs/DIALOGUE_SCRIPT.md`](docs/DIALOGUE_SCRIPT.md) — основной обязательный диалоговый сценарий.
+- [`docs/HOTSPOTS.md`](docs/HOTSPOTS.md) — интерактивные зоны и states каждого core-фона.
 - [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md) — канонический QA-проход.
 
 ### Production / implementation planning
@@ -87,7 +89,7 @@ Core gameplay не зависит напрямую от SDK.
 
 ## Следующая фаза
 
-После команды на начало разработки:
+После отдельной команды на начало разработки:
 
 1. подготовить Godot 4 Web-проект;
 2. собрать core systems через Local adapter;
