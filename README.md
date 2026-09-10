@@ -61,6 +61,7 @@
 - [`docs/UI_UX.md`](docs/UI_UX.md) — desktop/mobile UI/UX.
 - [`docs/ASSET_LIST.md`](docs/ASSET_LIST.md) — фоны, персонажи, анимации, props, UI, FX и звук.
 - [`docs/ASTRA_ASSET_BATCH_01.md`](docs/ASTRA_ASSET_BATCH_01.md) — первое production-ТЗ для AstraGPT; визуальные концепты берутся из `docs/assets/`.
+- [`docs/ASTRA_ASSET_BATCH_01_FIX.md`](docs/ASTRA_ASSET_BATCH_01_FIX.md) — обязательный correction-pass Batch 01 перед переходом к первому фону.
 - [`docs/CONTENT_REGISTRY.md`](docs/CONTENT_REGISTRY.md) — стабильные IDs контента и save-state сущностей.
 - [`docs/TECH_ARCHITECTURE.md`](docs/TECH_ARCHITECTURE.md) — архитектура Godot/платформ без реализации.
 - [`docs/QA_RELEASE_PLAN.md`](docs/QA_RELEASE_PLAN.md) — QA, сохранения, платформы и release gates.
@@ -94,6 +95,10 @@ Core gameplay не зависит напрямую от SDK.
 
 [`docs/ASTRA_ASSET_BATCH_01.md`](docs/ASTRA_ASSET_BATCH_01.md)
 
+Correction pass после визуальной проверки:
+
+[`docs/ASTRA_ASSET_BATCH_01_FIX.md`](docs/ASTRA_ASSET_BATCH_01_FIX.md)
+
 Локальный путь проекта для Astra:
 
 `C:\Users\Роман\Documents\GitHub\Games\somov-detective`
@@ -103,6 +108,8 @@ Core gameplay не зависит напрямую от SDK.
 `docs/assets/`
 
 Astra обязана использовать их как основной визуальный ориентир и не менять игровой код.
+
+После утверждения correction pass следующий отдельный asset-task — **первый полноценный background: офис Сомова**.
 
 ## Следующая фаза
 
