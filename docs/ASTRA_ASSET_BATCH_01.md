@@ -1,0 +1,611 @@
+# ASTRA — ASSET PRODUCTION BATCH 01
+
+> Статус: **готово к выполнению**  
+> Назначение: первая тестовая production-партия графических ассетов для `Somov Detective`  
+> Локальный проект: `C:\Users\Роман\Documents\GitHub\Games\somov-detective`
+
+## 1. Роль
+
+Ты работаешь как **2D game artist / asset production designer** проекта `Somov Detective`.
+
+Твоя задача — создавать **реальные игровые ассеты**, пригодные для последующей сборки в Godot, строго по уже утверждённой документации и визуальным концептам проекта.
+
+Это не этап придумывания новой игры и не редизайн. Мир, сюжет, персонажи, локации, UX и production scope уже определены.
+
+---
+
+# 2. Сначала изучить проект
+
+До создания любых изображений полностью прочитать:
+
+- `README.md`
+- `docs/PREPRODUCTION_COMPLETE.md`
+- `docs/GAME_BIBLE.md`
+- `docs/WORLD.md`
+- `docs/MAP.md`
+- `docs/VISUAL_BIBLE.md`
+- `docs/STORY.md`
+- `docs/CHARACTERS.md`
+- `docs/LOCATIONS.md`
+- `docs/SCENES.md`
+- `docs/HOTSPOTS.md`
+- `docs/UI_UX.md`
+- `docs/ASSET_LIST.md`
+- `docs/CONTENT_REGISTRY.md`
+
+При необходимости для понимания конкретных игровых ситуаций также использовать:
+
+- `docs/DETECTIVE_GRAPH.md`
+- `docs/PUZZLES.md`
+- `docs/DIALOGUE_BIBLE.md`
+- `docs/DIALOGUE_SCRIPT.md`
+- `docs/SIDE_TASKS.md`
+
+---
+
+# 3. Главные визуальные референсы
+
+Все утверждённые concept/reference-изображения пользователь будет складывать в:
+
+`docs/assets/`
+
+Там уже находится:
+
+`docs/assets/map_tikhorechensk_v2.png`
+
+Перед началом работы **обязательно просмотреть все изображения форматов PNG / JPG / JPEG / WEBP в `docs/assets/`**.
+
+Пользователь дополнительно положит туда утверждённые концепты Сомова, Клавдии, Горыныча, интерфейса, сцен и другие визуальные референсы из текущей pre-production.
+
+## Приоритет источников визуального стиля
+
+Если текстовое описание и утверждённый concept art немного расходятся, использовать такой приоритет:
+
+1. утверждённые изображения в `docs/assets/`;
+2. `docs/VISUAL_BIBLE.md`;
+3. `docs/CHARACTERS.md`;
+4. `docs/ASSET_LIST.md`;
+5. остальные документы.
+
+**Не интерпретировать концепты как приблизительное настроение. Они являются основным визуальным ориентиром проекта.**
+
+При этом нельзя буквально копировать известных персонажей, кадры или фирменную графику существующих мультфильмов и игр.
+
+---
+
+# 4. Критические ограничения
+
+## НЕ изменять
+
+- `.gd`
+- `.tscn`
+- `project.godot`
+- `.godot/`
+- `.cfg`
+- autoload
+- игровую логику
+- баланс
+- сюжет
+- диалоги
+- имена персонажей
+- карту
+- UI-логику
+- SDK
+- backend
+- существующую документацию проекта
+
+На этом этапе **никакого игрового кода не писать**.
+
+Разрешено:
+
+- создавать новые графические ассеты;
+- создавать вспомогательные preview/contact sheets;
+- создавать/обновлять только собственный отчёт `docs/ASSETS_REPORT.md`;
+- добавлять созданные ассеты в Git.
+
+---
+
+# 5. Общий визуальный язык
+
+Игра — оригинальный яркий рисованный 2D point-and-click квест.
+
+Нужное ощущение:
+
+- старая русская рисованная анимация;
+- классический юмористический adventure / point-and-click;
+- условная провинция 1970–1980-х;
+- сказочные существа как обычная часть быта;
+- тёплая сатира;
+- выразительные карикатурные силуэты.
+
+Главный принцип:
+
+> **Сначала — знакомое. Потом — странное. И всё это воспринимается героями как обычная жизнь.**
+
+Характер графики:
+
+- выразительный ручной контур;
+- немного живая и неровная линия;
+- упрощённые, хорошо читаемые формы;
+- гротескные пропорции;
+- крупная читаемая мимика;
+- характерные носы и силуэты;
+- тёплая палитра;
+- лёгкая бумажная / гуашевая фактура;
+- без лишней реалистичной детализации;
+- без glossy/mobile-game пластика;
+- без аниме;
+- без фотореализма;
+- без generic high fantasy.
+
+---
+
+# 6. Production-принципы
+
+Ассеты создаются не как красивый общий арт, а для реального использования в игре.
+
+Для персонажей и props:
+
+- `PNG`;
+- RGBA;
+- прозрачный фон;
+- чистый alpha;
+- без белой/цветной подложки;
+- безопасный transparent padding;
+- не обрезать волосы, руки, ноги, хвосты и предметы;
+- единый масштаб внутри набора одного персонажа;
+- единая одежда, лицо, пропорции и палитра во всех позах;
+- не менять дизайн персонажа от картинки к картинке.
+
+Для spritesheet:
+
+- кадры одного размера;
+- одинаковая точка опоры персонажа;
+- понятный порядок кадров слева направо;
+- без перекрытия соседних кадров;
+- transparent background.
+
+Для UI:
+
+- текст не впекать в кнопки и панели, если документ явно не требует обратного;
+- состояния элементов делать раздельно;
+- прозрачный фон;
+- избегать современного SaaS/mobile-app вида.
+
+---
+
+# 7. Куда сохранять
+
+Создать структуру:
+
+```text
+assets/
+└── production/
+    └── batch_01/
+        ├── concepts/
+        ├── characters/
+        │   ├── somov/
+        │   ├── klavdiya/
+        │   └── gorynych/
+        ├── ui/
+        ├── props/
+        └── previews/
+```
+
+Исходные утверждённые референсы из `docs/assets/` **не перемещать и не переименовывать**.
+
+---
+
+# 8. Этап 1 — согласовательные character sheets
+
+Сначала создать три обзорных листа. Они нужны, чтобы проверить единство образов перед массовой production-нарезкой.
+
+## 8.1. Сомов
+
+Файл:
+
+`assets/production/batch_01/concepts/somov_character_sheet.png`
+
+Широкий лист, минимум 3000 px по ширине.
+
+Показать одного и того же Сомова:
+
+### Turnaround
+
+- front;
+- 3/4;
+- profile;
+- back.
+
+### Эмоции / состояния
+
+- neutral;
+- think;
+- suspicious;
+- surprise;
+- tired;
+- talk;
+- mild irritation;
+- dry amusement.
+
+### Действия
+
+- walking pose;
+- inspect with magnifying glass;
+- inspect low object;
+- pick up item;
+- read document;
+- write in notebook;
+- open door;
+- give/show item.
+
+Образ строго сверять с референсами из `docs/assets/`, `VISUAL_BIBLE.md` и `CHARACTERS.md`.
+
+---
+
+## 8.2. Клавдия Семёновна
+
+Файл:
+
+`assets/production/batch_01/concepts/klavdiya_character_sheet.png`
+
+Показать:
+
+- front;
+- 3/4;
+- profile;
+- neutral standing;
+- seated at desk;
+- typing;
+- talking;
+- looking over glasses;
+- displeased;
+- dry smile;
+- telephone pose;
+- holding folder;
+- sensing old cabinet / room;
+- walking pose.
+
+Она кикимора, но визуально прежде всего **опытная пожилая секретарша**, органично существующая в Тихореченске.
+
+Не превращать в:
+
+- хоррор-монстра;
+- болотное чудовище;
+- стандартную ведьму;
+- generic fantasy creature.
+
+---
+
+## 8.3. Змей Горыныч
+
+Файл:
+
+`assets/production/batch_01/concepts/gorynych_character_sheet.png`
+
+Показать:
+
+- neutral;
+- working;
+- talking;
+- heads arguing;
+- one head sleeping;
+- irritated;
+- surprised;
+- holding tool;
+- pointing toward boiler;
+- trying to remember;
+- final argument after memories return.
+
+Он:
+
+- крупный;
+- трёхголовый;
+- добродушно-карикатурный;
+- не страшный;
+- в рабочем комбинезоне;
+- сотрудник Котельной №3.
+
+Характер голов:
+
+- левая — разговорчивая и самоуверенная;
+- средняя — серьёзная и рабочая;
+- правая — сонная и медлительная.
+
+Это **один персонаж**, а не три отдельных существа.
+
+---
+
+# 9. Этап 2 — production sprites Сомова
+
+После согласовательного листа сделать набор в:
+
+`assets/production/batch_01/characters/somov/`
+
+Обязательные отдельные состояния:
+
+```text
+somov_idle.png
+somov_talk.png
+somov_think.png
+somov_suspicious.png
+somov_surprised.png
+somov_inspect_glass.png
+somov_inspect_low.png
+somov_read_document.png
+somov_write_notebook.png
+somov_pickup.png
+somov_give_item.png
+somov_open_door.png
+```
+
+## Walk cycles
+
+```text
+somov_walk_side_sheet.png
+somov_walk_front_sheet.png
+somov_walk_back_sheet.png
+```
+
+Для каждого цикла желательно 6–8 кадров.
+
+Side-cycle делать так, чтобы при необходимости отражение по X не разрушало дизайн одежды и предметов.
+
+---
+
+# 10. Этап 3 — production sprites Клавдии
+
+Папка:
+
+`assets/production/batch_01/characters/klavdiya/`
+
+Минимальный набор:
+
+```text
+klavdiya_idle.png
+klavdiya_seated.png
+klavdiya_talk.png
+klavdiya_over_glasses.png
+klavdiya_displeased.png
+klavdiya_smile.png
+klavdiya_type_sheet.png
+klavdiya_phone.png
+klavdiya_folder.png
+klavdiya_sense_room.png
+klavdiya_walk_side_sheet.png
+```
+
+Анимационные листы должны соответствовать design sheet.
+
+---
+
+# 11. Этап 4 — production sprites Горыныча
+
+Папка:
+
+`assets/production/batch_01/characters/gorynych/`
+
+Минимум:
+
+```text
+gorynych_idle.png
+gorynych_work.png
+gorynych_point.png
+gorynych_tool.png
+gorynych_surprised.png
+gorynych_remember.png
+gorynych_heads_argue_sheet.png
+gorynych_talk_sheet.png
+gorynych_sleep_head_sheet.png
+```
+
+Если технически удобно, Горыныча можно подготовить модульно:
+
+- body/base;
+- left head;
+- middle head;
+- right head;
+
+Но визуально в итоговой сборке они обязаны совпадать без швов и дрожания.
+
+---
+
+# 12. Этап 5 — UI Vertical Slice Pack
+
+Папка:
+
+`assets/production/batch_01/ui/`
+
+Ориентироваться на утверждённые UI-концепты из `docs/assets/` и `docs/UI_UX.md`.
+
+Нужны отдельные элементы без впечённого текста:
+
+```text
+panel_dialogue.png
+panel_thought.png
+panel_inventory.png
+panel_notebook.png
+panel_map.png
+button_base_normal.png
+button_base_hover.png
+button_base_pressed.png
+button_base_disabled.png
+icon_pause.png
+icon_inventory.png
+icon_notebook.png
+icon_map.png
+cursor_default.png
+cursor_inspect.png
+cursor_talk.png
+cursor_use.png
+cursor_exit.png
+```
+
+Также подготовить один preview:
+
+`assets/production/batch_01/previews/ui_vertical_slice_preview.png`
+
+Preview нужен только для проверки композиции. Он не является игровым ассетом.
+
+---
+
+# 13. Этап 6 — ключевые props первого vertical slice
+
+Папка:
+
+`assets/production/batch_01/props/`
+
+Создать отдельными PNG:
+
+```text
+prop_somov_notebook.png
+prop_case_folder.png
+prop_magnifying_glass.png
+prop_newspaper.png
+prop_commission_photo.png
+prop_boiler_valve_new.png
+prop_boiler_valve_old.png
+prop_shift_journal.png
+prop_visitor_journal.png
+prop_gorynych_boot.png
+prop_day_book.png
+prop_anchor_thursday.png
+prop_storage_receipt.png
+```
+
+## Особо важно
+
+### Книга учёта дней
+
+Не делать её эпическим магическим гримуаром.
+
+Она должна выглядеть прежде всего как:
+
+- огромная старая городская регистрационная книга;
+- скучная;
+- тяжёлая;
+- официальная;
+- сильно использованная;
+- немного странная только при внимательном рассмотрении.
+
+### Якорь «ЧЕТВЕРГ»
+
+Это старая бумажная страница/разделитель.
+
+Не использовать:
+
+- магическое сияние;
+- руны high fantasy;
+- энергетические эффекты;
+- портал.
+
+Надпись `ЧЕТВЕРГ` допустима и сюжетно необходима.
+
+---
+
+# 14. Что НЕ входит в Batch 01
+
+Пока не рисовать массово:
+
+- все 14 backgrounds;
+- всех второстепенных NPC;
+- весь архив документов;
+- полный promo-pack;
+- все FX;
+- полный audio production;
+- assets второй игры;
+- Старый лес и Лешего как полноценного персонажа.
+
+Batch 01 нужен, чтобы подтвердить production pipeline и единство стиля.
+
+---
+
+# 15. Проверка качества каждого ассета
+
+Перед сохранением проверить:
+
+- соответствует ли утверждённым concept arts;
+- тот ли это персонаж, что на предыдущих ассетах;
+- сохранены ли пропорции;
+- совпадают ли одежда и детали;
+- корректен ли прозрачный фон;
+- нет ли случайных лишних объектов;
+- нет ли срезанных частей;
+- читается ли силуэт в игровом масштабе;
+- нет ли современного UI-стиля;
+- нет ли лишней реалистичной детализации;
+- нет ли визуального ухода в generic fantasy;
+- пригоден ли файл непосредственно для Godot.
+
+Если результат не соответствует референсам, **переделать до сохранения как production-ready**.
+
+---
+
+# 16. Git
+
+Работать непосредственно в локальном репозитории:
+
+`C:\Users\Роман\Documents\GitHub\Games\somov-detective`
+
+После завершения:
+
+1. проверить `git status`;
+2. убедиться, что не изменены файлы кода/документации проекта;
+3. добавить только созданные assets и `docs/ASSETS_REPORT.md`;
+4. сделать commit;
+5. отправить изменения в `main`.
+
+Не делать force-push.
+
+---
+
+# 17. Отчёт
+
+Создать или обновить:
+
+`docs/ASSETS_REPORT.md`
+
+Для каждого ассета указать:
+
+- путь;
+- назначение;
+- размер изображения;
+- прозрачность да/нет;
+- готовность: `ready` / `needs review`;
+- какой concept/reference использовался.
+
+В конце отчёта дать разделы:
+
+## Готово
+
+Полный список созданных файлов.
+
+## Требует проверки
+
+Что желательно визуально согласовать перед следующим batch.
+
+## Не сделано
+
+Если какой-то ассет из задания невозможно качественно подготовить — честно перечислить его здесь и указать причину.
+
+---
+
+# 18. Definition of Done — Batch 01
+
+Партия считается завершённой только если:
+
+- [ ] просмотрены все изображения в `docs/assets/`;
+- [ ] создан character sheet Сомова;
+- [ ] создан character sheet Клавдии;
+- [ ] создан character sheet Горыныча;
+- [ ] production sprites Сомова соответствуют sheet;
+- [ ] production sprites Клавдии соответствуют sheet;
+- [ ] production sprites Горыныча соответствуют sheet;
+- [ ] создан базовый UI pack;
+- [ ] созданы ключевые props;
+- [ ] alpha/размеры/края проверены;
+- [ ] создан `docs/ASSETS_REPORT.md`;
+- [ ] никакой игровой код не изменён;
+- [ ] изменения закоммичены и отправлены в `main`.
+
+После этого **остановиться**. Не переходить самостоятельно к Batch 02 и не начинать Godot-разработку.
