@@ -1,0 +1,88 @@
+{
+  "scene_id": "agency_office",
+  "canvas": [1920, 1080],
+  "coordinate_system": "pixels, origin top-left, positions are sprite top-left",
+  "background": "assets/backgrounds/agency/agency_office.webp",
+  "master": "assets/backgrounds/agency/agency_office_master.png",
+  "source_native_size": [1672, 941],
+  "export_note": "Background resized to 1920x1080; no native 1920 detail claim.",
+  "layers": [
+    {
+      "id": "calendar", "hotspot_id": "hs_agency_calendar",
+      "position": [860, 205], "display_size": [104, 138],
+      "hit_rect": [850, 205, 125, 140],
+      "states": {
+        "wednesday": {"sprite": "assets/props/agency/agency_calendar_blank.png", "text": "СРЕДА"},
+        "friday": {"sprite": "assets/props/agency/agency_calendar_blank.png", "text": "ПЯТНИЦА"}
+      },
+      "default_state": "friday",
+      "text_note": "Render weekday dynamically in the cream page area; date is intentionally unspecified."
+    },
+    {
+      "id": "teapot", "hotspot_id": "hs_agency_teapot",
+      "position": [392, 404], "display_size": [110, 110],
+      "hit_rect": [385, 398, 125, 125],
+      "states": {"empty": {"sprite": "assets/props/agency/agency_teapot_empty.png"}},
+      "default_state": "empty"
+    },
+    {
+      "id": "case_folder", "position": [805, 454], "display_size": [170, 80],
+      "states": {"current": {"sprite": "assets/props/agency/agency_case_folder.png"}},
+      "default_state": "current",
+      "completed_shelf_position": [5, 270],
+      "completed_shelf_display_size": [110, 48],
+      "completed_label": "Дело о пропавшем четверге",
+      "text_note": "Case title is dynamic, not baked into sprite."
+    },
+    {
+      "id": "notebook", "hotspot_id": "hs_agency_notebook",
+      "position": [925, 486], "display_size": [180, 48],
+      "hit_rect": [950, 432, 125, 120],
+      "states": {
+        "closed": {"sprite": "assets/props/agency/agency_notebook_closed.png"},
+        "open": {"sprite": "assets/props/agency/agency_notebook_open.png"},
+        "taken": {"sprite": null}
+      },
+      "default_state": "closed",
+      "closeup_text": "ЕСЛИ СЕГОДНЯ ПЯТНИЦА — Я БЫЛ ПРАВ",
+      "text_note": "Render note in a close-up UI using the open sprite; do not shrink story text into scene."
+    },
+    {
+      "id": "match", "hotspot_id": "hs_agency_match",
+      "position": [1080, 481], "display_size": [70, 53],
+      "hit_rect": [1062, 465, 78, 87],
+      "mobile_note": "At 800px viewport use the hotspot list/hints from UI_UX; this small clue needs an enlarged touch target. Avoid overlapping notebook/phone hit areas.",
+      "states": {"fresh_trace": {"sprite": "assets/props/agency/agency_ashtray_match.png"}},
+      "default_state": "fresh_trace"
+    },
+    {
+      "id": "phone", "hotspot_id": "hs_agency_phone",
+      "position": [1135, 437], "display_size": [145, 97],
+      "hit_rect": [1140, 426, 145, 126],
+      "states": {
+        "idle": {"sprite": "assets/props/agency/agency_phone_idle.png"},
+        "ringing": {"sprite": "assets/props/agency/agency_phone_ringing.png"}
+      },
+      "default_state": "idle",
+      "ring_preview_fps": 4,
+      "ring_note": "Two visual states, not a finished handset animation; alternate idle/ringing for a ring accent."
+    }
+  ],
+  "static_hotspots": [
+    {"id": "hs_agency_case_shelf", "rect": [615, 140, 190, 550], "action": "inspect", "note": "Filing cabinet is baked into background; no opening required by scene script."},
+    {"id": "hs_agency_exit", "rect": [1615, 35, 270, 770], "action": "exit", "enabled_after": "case_opened"}
+  ],
+  "dynamic_hotspots": [
+    {"id": "hs_agency_klavdia", "action": "talk", "source": "NPC sprite bounds after staging", "note": "Klavdiya is deliberately not baked into background."}
+  ],
+  "ambient_regions": [
+    {"id": "agency_window", "rect": [205, 0, 380, 455]},
+    {"id": "agency_typewriter", "rect": [5, 385, 255, 155]},
+    {"id": "agency_client_chair", "rect": [220, 470, 185, 345]},
+    {"id": "agency_somov_desk", "rect": [795, 492, 695, 308]}
+  ],
+  "walk_area_draft": [[540, 820], [805, 815], [1510, 815], [1810, 880], [1820, 920], [440, 920]],
+  "somov_start_foot": [700, 880],
+  "ui_reserved_bottom": 160,
+  "integration_note": "Asset placement draft only; no game code modified. Validate walk polygon, NPC staging and mobile hit areas in engine."
+}
